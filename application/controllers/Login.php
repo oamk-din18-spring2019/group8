@@ -11,7 +11,7 @@ class Login extends CI_Controller {
 	function index()
     {
         $data["page"]="login/login_form";
-        $this->load->view("menu/content", $data);
+        $this->load->view("login/login_form", $data);
     }
 
 	public function Login()
