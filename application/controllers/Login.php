@@ -7,7 +7,7 @@ class Login extends CI_Controller {
     {
         parent::__construct();
 	}
-	
+
 	function index()
     {
         $data["page"]="login/login_form";
@@ -20,7 +20,7 @@ class Login extends CI_Controller {
         $given_username = $this->input->post("username");
         $given_password = $this->input->post("password");
 		$db_password=$this->Login_model->get_password($given_username);
-		
+
         if(password_verify($given_password, $db_password))
         {
             $_SESSION["logged_in"]=true;
@@ -33,7 +33,7 @@ class Login extends CI_Controller {
             $_SESSION["logged_in"]=false;
             redirect("login");
 		}
-		
+
 		function logout()
         {
             $_SESSION["logged_in"]=false;
