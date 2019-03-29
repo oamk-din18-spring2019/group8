@@ -37,7 +37,7 @@
         </div>
 
         <div id="register_box">
-            <form class="register_form" action="<?php echo site_url("login/login"); ?>" method="post">
+            <form class="register_form" action="<?php echo site_url("login/register"); ?>" method="post">
                 <label for="">Select username</label> <br>
                 <input type="text" name="username" value=""> <br> <br>
                 <label for="">Select password</label> <br>
