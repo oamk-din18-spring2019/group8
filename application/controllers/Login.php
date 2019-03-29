@@ -7,7 +7,7 @@ class Login extends CI_Controller {
     {
         parent::__construct();
 	}
-	
+
 	function index()
     {
         $data["page"]="login/login_form";
@@ -23,6 +23,7 @@ class Login extends CI_Controller {
         $_SESSION['login_error'] = array("Your username or password was incorrect.");
 		
         if($given_password == $db_password) // <--- ONLY FOR TESTING !!! should be = password_verify($given_password, $db_password)
+
         {
             $_SESSION["logged_in"]=true;
             $_SESSION["username"]=$given_username;
