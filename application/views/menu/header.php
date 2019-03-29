@@ -22,6 +22,6 @@
           <li><a href="<#>">FAQ & Info</a> </li>
           <li><a href="<#>">About</a> </li>
         </ul>
+        <button action=<?php echo site_url("login/logout"); ?>></button>
       </div>
-      <a href = 'javascript:test()'>Click Here</a> to execute a javascript function.
     </div>

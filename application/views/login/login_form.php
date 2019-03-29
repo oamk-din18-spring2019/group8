@@ -10,13 +10,17 @@
   </head>
   <body>
 
+    <?php
+        session_destroy();
+    ?>
+
     <div id="login_logo">
         <h1>GameVS</h1>
     </div>
 
     <div id="tutorial_video">
         <video controls width="360" height="202,50">
-            <source src="video/demo.mp4" type="video/mp4">
+            <source src="video/ez4ence.mp4" type="video/mp4">
             <source src="video/demo.webm" type="video/webm">
             <div style="border: 1px solid black ; padding: 8px ;">
                 Sorry, your browser does not support the &lt;video&gt; tag used in this demo.
@@ -50,6 +54,22 @@
             <input type="button" value="Login" class="login_button" onclick="show_login()">
             <input type="button" value="Register" class="register_button" onclick="show_register()">
         </div>
+
+        <?php if (isset($_SESSION['login_error'])): ?>
+            <div id="form_error">
+                <?php foreach($_SESSION['login_error'] as $error): ?>
+                    <p><?php echo $error ?></p>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (isset($_SESSION['register_error'])): ?>
+            <div id="form_error">
+                <?php foreach($_SESSION['register_error'] as $error): ?>
+                    <p><?php echo $error ?></p>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
 
     </div>
 

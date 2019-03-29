@@ -19,7 +19,8 @@ class Login extends CI_Controller {
 		$this->load->model("Login_model");
         $given_username = $this->input->post("username");
         $given_password = $this->input->post("password");
-		$db_password=$this->Login_model->get_password($given_username);
+        $db_password=$this->Login_model->get_password($given_username);
+        $_SESSION['login_error'] = array("Your username or password was incorrect.");
 		
         if($given_password == $db_password) // <--- ONLY FOR TESTING !!! should be = password_verify($given_password, $db_password)
         {
@@ -31,20 +32,13 @@ class Login extends CI_Controller {
         else
         {
             $_SESSION["logged_in"]=false;
-            redirect("");   
+            redirect("");
 		}
-		
-		function logout()
-        {
-            $_SESSION["logged_in"]=false;
-            $_SESSION["username"]="";
-            $data["page"]="login/logout_page";
-            $this->load->view("menu/content", $data);
-        }
     }
     
     public function register()
     {
+        $_SESSION['register_error'] = array("Given username is already taken.");
         $connection = mysqli_connect('localhost', 'root', 'root');
         if (!$connection)
         {
@@ -81,6 +75,15 @@ class Login extends CI_Controller {
                 $fmsg ="User Registration Failed";
             }
         }
+    }
+
+    		
+    public function logout()
+    {
+        $_SESSION["logged_in"]=false;
+        $_SESSION["username"]="";
+        $data["page"]="login/logout_page";
+        $this->load->view("menu/content", $data);
     }
 
 
