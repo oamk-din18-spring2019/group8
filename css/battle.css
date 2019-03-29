@@ -26,13 +26,14 @@
 #battle_ratings
 {
   display: flex;
+  justify-content: center;
   width: 20%;
 }
 #battle_ratings_game1
 {
-  width: 50%;
+  width: 40%;
 }
 #battle_ratings_game2
 {
-  width: 50%;
+  width: 40%;
 }

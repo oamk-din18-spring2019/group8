@@ -8,20 +8,33 @@
     <img src="" alt="placeholder">
   </div>
   <div id="battle_ratings">
-    <div id="battle_ratings_game1">
-      <button type="button" name="button">a</button> <br>
-      <button type="button" name="button">b</button> <br>
-      <button type="button" name="button">c</button> <br>
-      <button type="button" name="button">d</button> <br>
-      <button type="button" name="button">e</button> <br>
-    </div>
-    <div id="battle_ratings_game2">
-      <button type="button" name="button">a</button> <br>
-      <button type="button" name="button">b</button> <br>
-      <button type="button" name="button">c</button> <br>
-      <button type="button" name="button">d</button> <br>
-      <button type="button" name="button">e</button> <br>
-    </div>
+        <table>
+          <tr>
+            <td><input type="radio" name="test" value=""></td>
+            <td><p>test1</p></td>
+            <td><input type="radio" name="test" value=""></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="test2" value=""></td>
+            <td><p>test1</p></td>
+            <td><input type="radio" name="test2" value=""></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="test3" value=""></td>
+            <td><p>test1</p></td>
+            <td><input type="radio" name="test3" value=""></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="test4" value=""></td>
+            <td><p>test1</p></td>
+            <td><input type="radio" name="test4" value=""></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="test5" value=""></td>
+            <td><p>test1</p></td>
+            <td><input type="radio" name="test5" value=""></td>
+          </tr>
+        </table>
 
   </div>
   <div id="battle_game2">
