@@ -6,8 +6,13 @@
 }
 #battle_container h1
 {
-  font-size: 75px;
-  text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 10px, #FFF 0px 0px 25px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  font-size: 70px;
+  text-shadow: #FFF 0px 0px 1px, #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 45px;
+}
+#battle_title
+{
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 #battle_games
 {
@@ -29,6 +34,13 @@
   justify-content: center;
   width: 20%;
 }
+#battle_ratings p
+{
+  font-size: 25px;
+  margin: 10px 0px 10px;
+  color: white;
+  text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 10px, #FFF 0px 0px 25px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
 #battle_ratings_game1
 {
   width: 40%;
@@ -36,4 +48,72 @@
 #battle_ratings_game2
 {
   width: 40%;
+}
+.battle_radiobutton
+{
+  -webkit-appearance: none;
+  	background-color: white;
+  	border: 1px solid purple;
+  	padding: 9px;
+  	border-radius: 4px;
+  	display: inline-block;
+  	position: relative;
+}
+.battle_radiobutton:active, .battle_radiobutton:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.battle_radiobutton:checked {
+	background-color: green;
+	border: 1px solid purple;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+#battle_skipbutton
+{
+  background-color: #070711;
+  border: none;
+  border-radius: 20px;
+  box-shadow:  #FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 30px;
+  color: white;
+  text-shadow:#FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 30px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  width: 20%;
+  justify-content: center;
+}
+#battle_submitbutton
+{
+    background-color: #070711;
+    border: none;
+    border-radius: 20px;
+    box-shadow:  #FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 30px;
+    color: white;
+    text-shadow:#FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 30px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 20%;
+    justify-content: center;
+}
+#battle_buttons
+{
+
+  width: 100%;
+  justify-content: center;
 }
