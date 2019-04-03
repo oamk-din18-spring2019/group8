@@ -13,7 +13,7 @@
     <?php
         session_destroy();
     ?>
-
+<div class="content">
     <div id="login_logo">
         <h1>GameVS</h1>
     </div>
@@ -38,7 +38,11 @@
                 <input type="text" name="password" value=""> <br> <br>
                 <input type="submit" name="" value="Login" class=""> 
             </form>
-        </div>
+    </div>
+
+    <div id="no_account">
+            <button id="" onclick="show_register()"> Don't have an account? </button>
+            </div>
 
         <div id="register_box">
             <form class="register_form" action="<?php echo site_url("login/register"); ?>" method="post">
@@ -98,10 +102,11 @@
         </div>
 
     </div>
-
-    <div class="footer">
-        <p id="footer_info">Joel Ala-aho & Ossi Karjalainen</p>
-    </div>
-
+</div>
+    <footer class="footer">
+        Joel Ala-aho & Ossi "vklp kempeleesee" Karjalainen
+    </footer>
   </body>
+
+
 </html>
