@@ -166,12 +166,18 @@ input[type=submit]
     border-radius: 5px;
 }
 
-html { height: 100%; }
-body {
+html 
+{ 
+    height: 100%; 
+}
+body 
+{
     min-height:100%; 
     position:relative;
+    margin: 0;
 }
-.footer { 
+.footer 
+{ 
     position: absolute; 
     left: 0 ; right: 0; bottom: 0; 
     height: 20px;
