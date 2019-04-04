@@ -117,3 +117,9 @@
   width: 100%;
   justify-content: center;
 }
+.battle_button{
+  outline: none;
+}
+.battle_button:active {
+  transform: translateY(2px);
+}
