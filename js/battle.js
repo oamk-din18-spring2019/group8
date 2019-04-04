@@ -3,7 +3,6 @@ function battle_selections()
   var game1 = 0;
   var game2 = 0;
   var winner = "";
-  var checker = document.forms[battle_form].value;
 
   if (document.getElementById('battle_value1').checked) {
     game1++;
@@ -44,11 +43,16 @@ function battle_selections()
     winner = "game2";
   }
 
+  if ((game1+game2)<5) {
+    console.log("WINNER NOT SELECTED");
+
+  }
+  else {
+      console.log("winner is "+ winner);
+  }
 
 
   console.log("game1 = "+game1);
   console.log("game2 = "+game2);
-  console.log("winner is "+ winner);
-  console.log(checker);
 
 }

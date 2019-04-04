@@ -36,9 +36,8 @@
             <td><input type="radio" name="value5" id="battle_value10" value="2" class="battle_radiobutton"></td>
           </tr>
         </table>
+
       </form>
-
-
 
   </div>
   <div id="battle_game2">
@@ -46,7 +45,7 @@
   </div>
 </div>
 <div id="battle_buttons">
-  <button type="button" name="button" onclick="battle_selections()" id="battle_submitbutton">SUBMIT</button>
+  <button type="button" name="button" class="battle_button" onclick="battle_selections();" id="battle_submitbutton">SUBMIT</button>
   <button type="button" name="button" id="battle_skipbutton">NEXT/SKIP</button>
 </div>
 
