@@ -46,7 +46,7 @@
 </div>
 <div id="battle_buttons">
   <button type="button" name="button" class="battle_button" onclick="battle_selections();" id="battle_submitbutton">SUBMIT</button>
-  <button type="button" name="button" id="battle_skipbutton">NEXT/SKIP</button>
+  <button type="button" name="button" class="battle_button" id="battle_skipbutton">NEXT/SKIP</button>
 </div>
 
 

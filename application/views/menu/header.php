@@ -18,7 +18,7 @@
               <ul>
                 <li><a href="<#>">Profile</a> </li>
                 <li><a href="<#>">Search</a> </li>
-                <li><a href="<#>">Battle</a> </li>
+                <li><a href="<?php echo site_url('battle'); ?>">Battle</a> </li>
                 <li><a href="<#>">Rankings</a> </li>
                 <li><a href="<#>">FAQ & Info</a> </li>
                 <li><a href="<#>">About</a> </li>
