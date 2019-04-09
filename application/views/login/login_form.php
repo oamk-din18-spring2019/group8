@@ -104,7 +104,7 @@
     </div>
 </div>
     <footer class="footer">
-        Joel Ala-aho & Ossi "vklp kempeleesee" Karjalainen
+        Joel Ala-aho & Ossi Karjalainen
     </footer>
   </body>
 

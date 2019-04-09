@@ -1,0 +1,33 @@
+.add_form
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    margin-top: 50px;
+}
+
+
+input[type=text]
+{
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+input[type=submit]
+{
+    margin-top: 20px;
+    background-color: #070711;
+    border: none;
+    border-radius: 20px;
+    box-shadow:  #FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    color: white;
+    text-shadow:#FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
