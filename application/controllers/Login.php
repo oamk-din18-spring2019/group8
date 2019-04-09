@@ -27,7 +27,7 @@ class Login extends CI_Controller {
         {
             $_SESSION["logged_in"]=true;
             $_SESSION["username"]=$given_username;
-            $data["page"]="login/personal_page";
+            $data["page"]="battle/battle_page";
             $this->load->view("menu/content", $data);
         }
         else
@@ -72,6 +72,8 @@ class Login extends CI_Controller {
             $result = mysqli_query($connection, $query);
             if($result){
                 $smsg = "User Created Successfully.";
+                $data["page"]="profile/profile_page";
+                $this->load->view("menu/content", $data);
             }else{
                 $fmsg ="User Registration Failed";
             }
