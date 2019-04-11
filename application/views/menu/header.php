@@ -14,6 +14,9 @@
     <div class="header">
         <div id="logo_info">
           <h1 id="logo_gamevs">GameVS</h1>
+          <div id="header_logout">
+            <a href="<?php echo site_url("login/logout"); ?>">logout</a>
+          </div>
         </div>
         <div id="menu">
               <ul>

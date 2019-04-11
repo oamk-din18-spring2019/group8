@@ -6,6 +6,14 @@ class Battle extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
+				if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
+        {
+            //
+        }
+        else
+        {
+            redirect("");
+        }
 
 	}
 
