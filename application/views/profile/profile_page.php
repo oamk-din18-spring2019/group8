@@ -20,7 +20,7 @@
     </div>
     <div class="profile_container_info">
       <div id="profile_infobox">
-        <form class="" action="index.html" method="post">
+        <form class="" action="<?php echo site_url("profile/infobox")?>" method="post">
           <textarea id="profile_infobox_edit" wrap="hard" maxlength="800" rows="20" cols="50" name="comment"
            placeholder="Here you should write general information like: What kind of genres you like?
            How old you are? etc..."
@@ -32,7 +32,7 @@
     </div>
     <div class="profile_container_info">
       <div class="">
-        
+
         <p>lorem ipsum lorem ipsum</p>
       </div>
 
