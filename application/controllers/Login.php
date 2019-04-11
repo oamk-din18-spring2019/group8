@@ -10,8 +10,15 @@ class Login extends CI_Controller {
 
 	function index()
     {
-        $data["page"]="login/login_form";
-        $this->load->view("login/login_form", $data);
+        if ($_SESSION["logged_in"]=true)
+        {
+            redirect("battle");
+        }
+        else
+        {
+            $data["page"]="login/login_form";
+            $this->load->view("login/login_form", $data);
+        }
     }
 
 	public function login()
@@ -27,8 +34,7 @@ class Login extends CI_Controller {
         {
             $_SESSION["logged_in"]=true;
             $_SESSION["username"]=$given_username;
-            $data["page"]="battle/battle_page";
-            $this->load->view("menu/content", $data);
+            redirect("battle");
         }
         else
         {
@@ -85,8 +91,9 @@ class Login extends CI_Controller {
     {
         $_SESSION["logged_in"]=false;
         $_SESSION["username"]="";
-        $data["page"]="login/logout_page";
-        $this->load->view("menu/content", $data);
+        session_destroy();
+        $data["page"]="login/login_form";
+        $this->load->view("login/login_form", $data);
     }
 
 
