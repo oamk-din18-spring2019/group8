@@ -11,12 +11,10 @@ class Profile_model extends CI_model
 
     public function infobox($insert_data)
     {
-        $this->db->select("infobox");
-        $this->db->from("profilepage");
-        $this->db->where("idprofilepage", $given_username);
-        $this->db->get()->row("infobox");
-        
-        $_SESSION["username"]=$given_username;
+      $this->db->insert("games", $insert_data);
+      return $this->db->affected_rows();
+
+      $_SESSION["username"]=$given_username;
     }
 
 }

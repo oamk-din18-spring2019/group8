@@ -6,6 +6,15 @@ class Login extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
+				if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
+        {
+            //
+        }
+        else
+        {
+            redirect("");
+        }
+
 	}
 
 	function index()
@@ -28,7 +37,7 @@ class Login extends CI_Controller {
         $given_password = $this->input->post("password");
         $db_password=$this->Login_model->get_password($given_username);
         $_SESSION['login_error'] = array("Your username or password was incorrect.");
-		
+
         if($given_password == $db_password) // <--- ONLY FOR TESTING !!! should be = password_verify($given_password, $db_password)
 
         {
@@ -42,7 +51,7 @@ class Login extends CI_Controller {
             redirect("");
 		}
     }
-    
+
     public function register()
     {
         $_SESSION['register_error'] = array("Given username is already taken.");
@@ -62,8 +71,8 @@ class Login extends CI_Controller {
         $username = $_POST['username'];
         $sql_usernames = "SELECT * FROM user WHERE username='$username'";
         $res_usernames = mysqli_query($connection, $sql_usernames);
-  
-        if(mysqli_num_rows($res_usernames) > 0) 
+
+        if(mysqli_num_rows($res_usernames) > 0)
         {
           $name_error = "Sorry... username already taken";
           redirect("");
@@ -73,7 +82,7 @@ class Login extends CI_Controller {
         {
             $username = $_POST['username'];
             $password = $_POST['password'];
-     
+
             $query = "INSERT INTO `user` (username, password) VALUES ('$username', '$password')";
             $result = mysqli_query($connection, $query);
             if($result){
@@ -86,14 +95,15 @@ class Login extends CI_Controller {
         }
     }
 
-    		
+
     public function logout()
     {
         $_SESSION["logged_in"]=false;
         $_SESSION["username"]="";
-        session_destroy();
         $data["page"]="login/login_form";
         $this->load->view("login/login_form", $data);
+				redirect("");
+				session_destroy();
     }
 
 

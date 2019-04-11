@@ -6,7 +6,15 @@ class Add_games extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->load->model("Add_model");    
+        $this->load->model("Add_model");
+				if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
+        {
+            //
+        }
+        else
+        {
+            redirect("");
+        }  
 	}
 
 	function index()
@@ -24,7 +32,7 @@ class Add_games extends CI_Controller {
         );
         $result=$this->Add_model->add_game($insert_data);
 
-        if ($result==1) 
+        if ($result==1)
         {
             $data["message"]="You have added a new game.";
         }
