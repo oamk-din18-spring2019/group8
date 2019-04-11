@@ -21,7 +21,7 @@ class Profile extends CI_Controller {
         $insert_data=array(
             "game" => $this->input->post("game"),
         );
-        $result=$this->Add_model->add_game($insert_data);
+        $result=$this->Add_model->infobox($insert_data);
 
         if ($result==1)
         {
