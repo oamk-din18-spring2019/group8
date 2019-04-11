@@ -18,7 +18,7 @@
         <div id="menu">
               <ul>
                 <li><a href="<?php echo site_url('profile'); ?>">Profile</a> </li>
-                <li><a href="<#>">Search</a> </li>
+                <li><a href="<?php echo site_url('search'); ?>">Search</a> </li>
                 <li><a href="<?php echo site_url('battle'); ?>">Battle</a> </li>
                 <li><a href="<#>">Rankings</a> </li>
                 <li><a href="<#>">FAQ & Info</a> </li>
