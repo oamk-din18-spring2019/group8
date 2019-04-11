@@ -5,7 +5,7 @@
     <link rel = "stylesheet" type = "text/css" href = "css/style.css">
     <link rel = "stylesheet" type = "text/css" href = "css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/login.js"></script> 
+    <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/login.js"></script>
     <title>GameVS</title>
   </head>
   <body>
@@ -36,7 +36,7 @@
                 <input type="text" name="username" value=""> <br> <br>
                 <label for="">Password</label> <br>
                 <input type="text" name="password" value=""> <br> <br>
-                <input type="submit" name="" value="Login" class=""> 
+                <input type="submit" name="" value="Login" class="">
             </form>
     </div>
 
@@ -50,7 +50,7 @@
                 <input type="text" name="username" value=""> <br> <br>
                 <label for="">Select password</label> <br>
                 <input type="text" name="password" value=""> <br> <br>
-                <input type="submit" name="" value="Create an account" class=""> 
+                <input type="submit" name="" value="Create an account" class="">
             </form>
         </div>
 
