@@ -9,6 +9,13 @@ class Battle_model extends CI_model
         parent:: __construct();
     }
 
+    public function pickedgames()
+    {
+      $this->db->order_by('rand()');
+      $this->db->limit(1);
+      $query = $this->db->get('games');
+      return $query->result_array();
 
+    }
 
 }

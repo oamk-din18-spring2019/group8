@@ -5,6 +5,13 @@
 
 <div id="battle_games">
   <div id="battle_game1">
+    <div>
+      <?php
+      foreach ($game1 as $row) {
+          echo '<p>'.$row['game'].'</p>';
+          echo '<p style="display:none;">'.$row['id'].'</p>';}
+      ?>
+    </div>
     <img src="" alt="placeholder">
   </div>
   <div id="battle_ratings">
@@ -40,7 +47,15 @@
       </form>
 
   </div>
+
   <div id="battle_game2">
+    <div class="">
+      <?php
+      foreach ($game2 as $row) {
+          echo '<p>'.$row['game'].'</p>';
+          echo '<p style="display:none;">'.$row['id'].'</p>';}
+      ?>
+    </div>
     <img src="" alt="placeholder">
   </div>
 </div>
