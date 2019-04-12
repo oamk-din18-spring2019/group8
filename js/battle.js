@@ -1,6 +1,6 @@
 function battle_selections()
 {
-  var game1 = 0;
+  var game1 = document;
   var game2 = 0;
   var winner = "";
 
