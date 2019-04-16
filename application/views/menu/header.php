@@ -23,7 +23,7 @@
                 <li><a href="<?php echo site_url('profile'); ?>">Profile</a> </li>
                 <li><a href="<?php echo site_url('search'); ?>">Search</a> </li>
                 <li><a href="<?php echo site_url('battle'); ?>">Battle</a> </li>
-                <li><a href="<#>">Rankings</a> </li>
+                <li><a href="<?php echo site_url('rankings'); ?>">Rankings</a> </li>
                 <li><a href="<#>">FAQ & Info</a> </li>
                 <li><a href="<#>">About</a> </li>
               </ul>
