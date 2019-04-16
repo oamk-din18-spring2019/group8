@@ -6,6 +6,10 @@
   </form>
 </div>
 <div >
+  <?php
+  foreach ($results as $row) {?>
+    <p><a href="<?php echo site_url('rankings'); ?>"><?php echo $row->game ?></a></p>
 
+    <?php  }?>
 
 </div>

@@ -9,7 +9,10 @@
       <?php
       foreach ($game1 as $row) {
           echo '<p>'.$row['game'].'</p>';
-          echo '<p style="display:none;">'.$row['id'].'</p>';}
+          echo '<p style="display:none;" id="game1_id">'.$row['id'].'</p>';
+          echo '<p style="display:none;" id="game1_elo">'.$row['elo'].'</p>';
+          echo '<p style="display:none;" id="game1_genreelo">'.$row['genreelo'].'</p>';
+          echo '<p style="display:none;" id="game1_genre">'.$row['genre'].'</p>';}
       ?>
     </div>
     <img src="" alt="placeholder">
@@ -53,7 +56,10 @@
       <?php
       foreach ($game2 as $row) {
           echo '<p>'.$row['game'].'</p>';
-          echo '<p style="display:none;">'.$row['id'].'</p>';}
+          echo '<p style="display:none;" id="game2_id">'.$row['id'].'</p>';
+          echo '<p style="display:none;" id="game2_elo">'.$row['elo'].'</p>';
+          echo '<p style="display:none;" id="game2_genreelo">'.$row['genreelo'].'</p>';
+          echo '<p style="display:none;" id="game2_genre">'.$row['genre'].'</p>';}
       ?>
     </div>
     <img src="" alt="placeholder">
@@ -61,7 +67,7 @@
 </div>
 <div id="battle_buttons">
   <button type="button" name="button" class="battle_button" onclick="battle_selections();" id="battle_submitbutton">SUBMIT</button>
-  <button type="button" name="button" class="battle_button" id="battle_skipbutton">NEXT/SKIP</button>
+  <button type="button" name="button" class="battle_button" onclick="window.location.reload()" id="battle_skipbutton">NEXT/SKIP</button>
 </div>
 
 
