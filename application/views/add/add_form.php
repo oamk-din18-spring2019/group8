@@ -12,5 +12,4 @@
     </select>
     <!--<input type="file" name="picupload" value="picupload" accept="image"> -->
     <input type="submit" name="" value="Submit">
-</form>     
-
+</form>
