@@ -7,7 +7,7 @@ class Search extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('Search_model');
-				if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
+		if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
         {
             //
         }
@@ -20,7 +20,6 @@ class Search extends CI_Controller {
 
 	function index()
     {
-
         $data["page"]="search/search_page";
         $this->load->view("menu/content", $data);
     }
@@ -29,8 +28,7 @@ class Search extends CI_Controller {
     {
         $keyword=$this->input->post('keyword');
         $data['results']=$this->Search_model->search($keyword);
-				$data["page"]="search/search_results";
+		$data["page"]="search/search_results";
         $this->load->view('menu/content',$data);
     }
-
 }

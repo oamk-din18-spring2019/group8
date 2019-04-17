@@ -118,6 +118,11 @@ body
 }
 
 
+.gametable
+{
+    margin-top: 200px;
+}
+
 
 @-webkit-keyframes gradient_background {
     0%{background-position:81% 0%}

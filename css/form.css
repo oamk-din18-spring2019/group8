@@ -16,6 +16,15 @@ input[type=text]
     outline: none;
 }
 
+input[type=password]
+{
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    color: white;
+    outline: none;
+}
+
 input[type=submit]
 {
     margin-top: 20px;
@@ -30,4 +39,17 @@ input[type=submit]
     font-size: 20px;
     cursor: pointer;
     outline: none;
+}
+
+.result_box
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.search_function
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
