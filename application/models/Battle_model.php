@@ -18,4 +18,10 @@ class Battle_model extends CI_model
 
     }
 
+    public function submit_elo($insert_data)
+    {
+        $this->db->replace("games", $insert_data);
+        return $this->db->affected_rows();
+    }
+
 }
