@@ -70,21 +70,21 @@ class Login extends CI_Controller {
           redirect("");
         }
 
-        else if(isset($_POST['username']) && isset($_POST['password']))
-        {
-            $username = $_POST['username'];
-            $password = $_POST['password'];
+				else if(isset($_POST['username']) && isset($_POST['password']))
+	        {
+	            $username = $_POST['username'];
+	            $password = $_POST['password'];
 
-            $query = "INSERT INTO `user` (username, password) VALUES ('$username', '$password')";
-            $result = mysqli_query($connection, $query);
-            if($result){
-                $smsg = "User Created Successfully.";
-                $data["page"]="profile/profile_page";
-                $this->load->view("menu/content", $data);
-            }else{
-                $fmsg ="User Registration Failed";
-            }
-        }
+	            $query = "INSERT INTO user (username, password) VALUES ('$username', '$password')";
+	            $result = mysqli_query($connection, $query);
+	            if($result){
+	                $_SESSION["logged_in"]=true;
+	                $_SESSION["username"]=$username;
+	                redirect("profile");
+	            }else{
+	                $fmsg ="User Registration Failed";
+	            }
+	        }
     }
 
 
