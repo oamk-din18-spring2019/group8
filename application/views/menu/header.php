@@ -6,14 +6,14 @@
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/battle.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/profile.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/minigame.css">
-    <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/rankings.css">    
+    <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/rankings.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/battle.js"></script>
     <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/sample.js"></script>
     <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/global.js"></script>
     <title>GameVS</title>
   </head>
-  <body onload="change_class();">
+  <body onload="change_class(); change_background();">
     <div class="header">
         <div id="logo_info">
           <h1 id="logo_gamevs">GameVS</h1>
