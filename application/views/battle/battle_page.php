@@ -18,7 +18,9 @@
           echo '<p style="display:none;" id="game1_genre">'.$row['genre'].'</p>';}
       ?>
     </div>
-    <img src="" alt="placeholder">
+    <?php foreach ($game1 as $row) {?>
+    <img class="battle_images" src="..\image\gamepictures\gamepicture<?php echo $row['id'];}?>.png" alt="placeholder">
+
   </div>
   <div id="battle_ratings">
     <form id="battle_form">
@@ -68,7 +70,7 @@
           echo '<p style="display:none;" id="game2_genre">'.$row['genre'].'</p>';}
       ?>
     </div>
-    <img src="" alt="placeholder">
+    <img class="battle_images" src="..\image\myfriendhello.png" alt="">
   </div>
 </div>
 <div id="battle_buttons">

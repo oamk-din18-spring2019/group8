@@ -4,12 +4,8 @@ body
     color:#FFF;
     font-family: 'Play', sans-serif;
     height: 100%;
-    background: linear-gradient(90deg, #050505, #050505, #e400d7, #050505, #050505);
-    background-size: 1800% 1800%;
+    background: #050505;
 
-    -webkit-animation: gradient_background 25s ease infinite;
-    -moz-animation: gradient_background 25s ease infinite;
-    animation: gradient_background 25s ease infinite;
 }
 .header
 {
@@ -68,7 +64,6 @@ body
     background-color: #333;
 }
 
-
 #menu li {
     display: flex;
     justify-content: center;
@@ -89,9 +84,23 @@ body
 #menu li a:hover {
     background-color: #070711;
     width: 100%;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
     color: white;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
+
+.selected {
+    background: linear-gradient(90deg, #050505, #050505, #e400d7, #050505, #050505);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: gradient_background 5s ease infinite;
+    -moz-animation: gradient_background 5s ease infinite;
+    animation: gradient_background 5s ease infinite;
+    width: 100%;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
 
 .container
 {

@@ -2,6 +2,8 @@ function battle_selections()
 {
   var game1 = 0;
   var game2 = 0;
+  var game1_add = 0;
+  var game2_add = 0;
   var winner = "";
   var game1_winner = document.getElementById("game1_id").textContent;
   var game2_winner = document.getElementById("game2_id").textContent;
@@ -42,47 +44,58 @@ function battle_selections()
 
   if (document.getElementById('battle_value1').checked) {
     game1++;
+    game1_add = game1_add + 2;
   }
   if (document.getElementById('battle_value2').checked) {
     game2++;
+    game2_add = game2_add + 2;
+
   }
   if (document.getElementById('battle_value3').checked) {
     game1++;
+    game1_add = game1_add + 5;
   }
   if (document.getElementById('battle_value4').checked) {
     game2++;
+    game2_add = game2_add = game2_add + 5;
   }
   if (document.getElementById('battle_value5').checked) {
     game1++;
+    game1_add = game1_add + 3;
   }
   if (document.getElementById('battle_value6').checked) {
     game2++;
+    game2_add = game2_add + 3;
   }
   if (document.getElementById('battle_value7').checked) {
     game1++;
+    game1_add = game1_add + 1;
   }
   if (document.getElementById('battle_value8').checked) {
     game2++;
+    game2_add = game2_add + 1;
   }
   if (document.getElementById('battle_value9').checked) {
     game1++;
+    game1_add = game1_add + 2;
   }
   if (document.getElementById('battle_value10').checked) {
     game2++;
+    game2_add = game2_add + 2;
   }
 
   if (game1 > game2)
   {
     winner = game1_winner;
     if (game1_genre == game2_genre) {
-      game1_newelogenre = Math.round (Math.round(game1_genreelo)+75*(1-game1_winchance_genre));
-      game2_newelogenre = Math.round (Math.round(game2_genreelo)+75*(0-game2_winchance_genre));
-      game1_newelo = Math.round (Math.round(game1_elo)+50*(1-game1_winchance));
-      game2_newelo = Math.round (Math.round(game2_elo)+50*(0-game2_winchance));
+      game1_newelogenre = Math.round (Math.round(game1_genreelo)+(75+game1_add)*(1-game1_winchance_genre));
+      game2_newelogenre = Math.round (Math.round(game2_genreelo)+(75-game2_add)*(0-game2_winchance_genre));
+      game1_newelo = Math.round (Math.round(game1_elo)+(50+game1_add)*(1-game1_winchance));
+      game2_newelo = Math.round (Math.round(game2_elo)+(50-game2_add)*(0-game2_winchance));
     }
     else {
-      game1_newelo = Math.round (Math.round(game1_elo)+50*(1-game1_winchance));
-      game2_newelo = Math.round (Math.round(game2_elo)+50*(0-game2_winchance));
+      game1_newelo = Math.round (Math.round(game1_elo)+(50+game1_add)*(1-game1_winchance));
+      game2_newelo = Math.round (Math.round(game2_elo)+(50-game2_add)*(0-game2_winchance));
       game1_newelogenre = game1_genreelo;
       game2_newelogenre = game2_genreelo;
     }
@@ -91,14 +104,14 @@ function battle_selections()
   else if (game2 > game1) {
     winner = game2_winner;
       if (game1_genre == game2_genre) {
-        game1_newelogenre = Math.round (Math.round(game1_genreelo)+75*(0-game1_winchance_genre));
-        game2_newelogenre = Math.round (Math.round(game2_genreelo)+75*(1-game2_winchance_genre));
-        game2_newelo = Math.round (Math.round(game2_elo)+50*(1-game2_winchance));
-        game1_newelo = Math.round (Math.round(game1_elo)+50*(0-game1_winchance));
+        game1_newelogenre = Math.round (Math.round(game1_genreelo)+(75-game1_add)*(0-game1_winchance_genre));
+        game2_newelogenre = Math.round (Math.round(game2_genreelo)+(75+game2_add)*(1-game2_winchance_genre));
+        game2_newelo = Math.round (Math.round(game2_elo)+(50+game2_add)*(1-game2_winchance));
+        game1_newelo = Math.round (Math.round(game1_elo)+(50-game1_add)*(0-game1_winchance));
       }
       else {
-        game2_newelo = Math.round (Math.round(game2_elo)+50*(1-game2_winchance));
-        game1_newelo = Math.round (Math.round(game1_elo)+50*(0-game1_winchance));
+        game2_newelo = Math.round (Math.round(game2_elo)+(50+game2_add)*(1-game2_winchance));
+        game1_newelo = Math.round (Math.round(game1_elo)+(50-game1_add)*(0-game1_winchance));
         game1_newelogenre = game1_genreelo;
         game2_newelogenre = game2_genreelo;
         }
@@ -113,6 +126,8 @@ function battle_selections()
       console.log(game2_newelo);
       console.log(game1_newelogenre);
       console.log(game2_newelogenre);
+      console.log(game1_add);
+      console.log(game2_add);
       game1_id.value = game1_winner;
       game2_id.value = game2_winner;
       game1_game.value = game1_name;
