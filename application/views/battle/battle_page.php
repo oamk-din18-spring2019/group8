@@ -19,7 +19,7 @@
       ?>
     </div>
     <?php foreach ($game1 as $row) {?>
-    <img class="battle_images" src="..\image\gamepictures\gamepicture<?php echo $row['id'];}?>.png" alt="placeholder">
+    <img class="battle_images" src="..\image\gamepictures\gamepicture<?php echo $row['id'];}?>.png" alt="">
 
   </div>
   <div id="battle_ratings">
@@ -70,7 +70,8 @@
           echo '<p style="display:none;" id="game2_genre">'.$row['genre'].'</p>';}
       ?>
     </div>
-    <img class="battle_images" src="..\image\myfriendhello.png" alt="">
+    <?php foreach ($game2 as $row) {?>
+    <img class="battle_images" src="..\image\gamepictures\gamepicture<?php echo $row['id'];}?>.png" alt="">
   </div>
 </div>
 <div id="battle_buttons">
@@ -93,9 +94,9 @@
   </form>
 
 
-  <button type="submit" form="submiteloid" name="button" class="battle_button" id="battle_skipbutton">NEXT/SKIP</button>
+  <button type="submit" form="submiteloid" name="button" style="display: none !important" class="battle_button" id="battle_skipbutton">NEXT GAMES</button>
 </div>
-
+<button class="battle_button" onclick="window.location.reload()" id="battle_nextgamesbutton">NEXT/SKIP</button>
 
 
 

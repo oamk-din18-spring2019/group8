@@ -15,7 +15,7 @@
                     }
                 ?>
                 <form method="post" action="<?=base_url('index.php/Upload/store')?>" enctype="multipart/form-data">
-                    <input type="file" id="game_image" name="game_image" size="33" />
+                    <input type="file" accept=".png" id="game_image" name="game_image" size="33" />
                     <input type="text" name="id" id="id" placeholder="Input ID of the game">
                     <input type="submit" value="Upload Image" />
                 </form>

@@ -28,7 +28,7 @@ class Search extends CI_Controller {
     {
         $keyword=$this->input->post('keyword');
         $data['results']=$this->Search_model->search($keyword);
-		$data["page"]="search/search_results";
+				$data["page"]="search/search_results";
         $this->load->view('menu/content',$data);
     }
 }

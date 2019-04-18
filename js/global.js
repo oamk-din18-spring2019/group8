@@ -1,12 +1,5 @@
 function change_class()
 {
-  var profile_link = document.getElementById('profile_link')
-  var profile_link = document.getElementById('profile_link')
-  var profile_link = document.getElementById('profile_link')
-  var profile_link = document.getElementById('profile_link')
-  var profile_link = document.getElementById('profile_link')
-  var profile_link = document.getElementById('profile_link')
-  var profile_link = document.getElementById('profile_link')
 
 
   if(document.URL.indexOf("profile") >= 0){
@@ -35,4 +28,37 @@ function change_class()
   if(document.URL.indexOf("about") >= 0){
       about_link.className="selected";
     }
+}
+
+function change_background()
+{
+
+    if(document.URL.indexOf("profile") >= 0){
+
+      }
+
+    if(document.URL.indexOf("search") >= 0){
+
+      }
+
+    if(document.URL.indexOf("battle") >= 0){
+      document.body.style.backgroundImage = "url('../image/testi.jpg')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      }
+
+    if(document.URL.indexOf("rankings") >= 0){
+
+      }
+    if(document.URL.indexOf("minigame") >= 0){
+
+      }
+
+    if(document.URL.indexOf("faq") >= 0){
+      }
+
+    if(document.URL.indexOf("about") >= 0){
+
+      }
+
 }

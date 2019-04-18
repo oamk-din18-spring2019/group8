@@ -121,6 +121,9 @@ function battle_selections()
     console.log("WINNER NOT SELECTED");
   }
   else {
+      document.getElementById("battle_skipbutton").style.display = "flex";
+      document.getElementById("battle_submitbutton").style.display = "none";
+      document.getElementById("battle_nextgamesbutton").style.display = "none";
       console.log("winner is "+ winner);
       console.log(game1_newelo);
       console.log(game2_newelo);
@@ -145,6 +148,13 @@ function battle_selections()
   }
 
 
+}
+
+function show_nextgames()
+{
+
+    document.getElementById("battle_submitbutton").style.display = "none";
+    document.getElementById("battle_skipbutton").style.display = "none";
 }
 
 function submitforms()

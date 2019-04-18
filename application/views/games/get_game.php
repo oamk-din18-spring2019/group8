@@ -13,7 +13,7 @@
                     echo "<td>".$row["genre"]."</td>";
                     echo "<td>".$row["ranking"]."</td>";
                     echo "<td>".$row["genreranking"]."</td>";
-                    echo "<td> <a href=\"https://en.wikipedia.org/wiki/" . $row["game"] . "\"> " . $row["game"] . " </a> </td>";
+                    echo "<td> <a target='_blank' href=\"https://en.wikipedia.org/wiki/" . $row["game"] . "\"> " . $row["game"] . " </a> </td>";
                 echo "</tr>";
             } ?>
         </tbody>
