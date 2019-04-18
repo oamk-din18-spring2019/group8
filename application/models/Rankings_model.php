@@ -12,6 +12,7 @@ class Rankings_model extends CI_model
     function rankings_list()
     {
         $this->db->order_by("elo", "desc");
+        $this->db->limit(5);
         $query=$this->db->get("games");
         return $query->result();
     }

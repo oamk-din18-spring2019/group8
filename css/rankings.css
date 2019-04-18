@@ -1,0 +1,56 @@
+#rankings_container
+{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#rankings_title h1
+{
+  font-size: 70px;
+  text-shadow: #FFF 0px 0px 1px, #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 45px;
+}
+#rankings_title
+{
+  margin-bottom: 0;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rankings_listtitle
+{
+  display: flex;
+}
+#rankings_content
+{
+  display:flex;
+}
+.rankings_infocontainer
+{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+#battle_ratings
+{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+#battle_ratings p
+{
+  font-size: 25px;
+  margin: 10px 0px 10px;
+  color: white;
+  text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 10px, #FFF 0px 0px 25px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+#battle_ratings_game1
+{
+  width: 40%;
+}
+#battle_ratings_game2
+{
+  width: 40%;
+}
