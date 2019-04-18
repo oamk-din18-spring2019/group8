@@ -47,13 +47,13 @@ class Login extends CI_Controller {
     public function register()
     {
         $_SESSION['register_error'] = array("Given username is already taken.");
-        $connection = mysqli_connect('localhost', 'root', 'root');
+        $connection = mysqli_connect('mysli.oamk.fi', 't7aljo00', 'bPkMkXPAfN5MFcsQ');
         if (!$connection)
         {
             die("Database Connection Failed" . mysqli_error($connection));
         }
 
-        $select_db = mysqli_select_db($connection, 'users');
+        $select_db = mysqli_select_db($connection, 'opisk_t7aljo00');
 
         if (!$select_db)
         {
@@ -61,7 +61,7 @@ class Login extends CI_Controller {
         }
 
         $username = $_POST['username'];
-        $sql_usernames = "SELECT * FROM user WHERE username='$username'";
+        $sql_usernames = "SELECT * FROM users WHERE username='$username'";
         $res_usernames = mysqli_query($connection, $sql_usernames);
 
         if(mysqli_num_rows($res_usernames) > 0)
@@ -75,7 +75,7 @@ class Login extends CI_Controller {
 	            $username = $_POST['username'];
 	            $password = $_POST['password'];
 
-	            $query = "INSERT INTO user (username, password) VALUES ('$username', '$password')";
+	            $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 	            $result = mysqli_query($connection, $query);
 	            if($result){
 	                $_SESSION["logged_in"]=true;
