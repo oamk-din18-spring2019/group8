@@ -15,7 +15,6 @@ class Battle_model extends CI_model
       $this->db->limit(1);
       $query = $this->db->get('games');
       return $query->result_array();
-
     }
 
     public function submit_elo($insert_data)
