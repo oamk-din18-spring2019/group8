@@ -33,8 +33,10 @@ class Login extends CI_Controller {
         if($given_password == $db_password) // <--- ONLY FOR TESTING !!! should be = password_verify($given_password, $db_password)
 
         {
+            $id = "SELECT id FROM users WHERE username='$given_username'";
             $_SESSION["logged_in"]=true;
             $_SESSION["username"]=$given_username;
+            $_SESSION["profileid"]=$id;
             redirect("battle");
         }
         else
