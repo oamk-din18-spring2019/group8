@@ -30,17 +30,6 @@ class Add_games extends CI_Controller {
             "genre" => $this->input->post("genre")
         );
         $result=$this->Add_model->add_game($insert_data);
-
-        if ($result==1)
-        {
-            $data["message"]="You have added a new game.";
-        }
-
-        else
-        {
-            $data["message"]="Something went wrong!";
-        }
-
         $data["page"]="add/add_form";
         $this->load->view("menu/content", $data);
     }
