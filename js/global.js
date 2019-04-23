@@ -42,9 +42,10 @@ function change_background()
       }
 
     if(document.URL.indexOf("battle") >= 0){
-      document.body.style.backgroundImage = "url('../image/testi.jpg')";
+      document.body.style.backgroundImage = "url('../image/testiman.png')";
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
       }
 
     if(document.URL.indexOf("rankings") >= 0){
