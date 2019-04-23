@@ -6,14 +6,7 @@
   <div id="profile_container_divider">
     <div class="profile_container_info">
       <div id="profile_profilepic">
-        <?php foreach ($profile as $row){
-                echo "<p>".$row["id"]."</p>";
-                echo "<p>".$row["username"]."</p>";
-                echo "<p>".$row["userpoints"]."</p>";
-                echo "<p>".$row["ranking"]."</p>";
-        } ?>
-        <?php foreach ($profile as $row) {?>
-        <img src="..\image\gamepictures\gamepicture<?php echo $row['id'];}?>.png" alt="placeholder">
+        <img src="..\image\placeholder123.png" alt="placeholder">
       </div>
       <div id="profile_picture">
         <form class="" action="index.html" method="post">

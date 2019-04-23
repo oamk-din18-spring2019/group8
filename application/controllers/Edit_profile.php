@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Profile extends CI_Controller {
+class Edit_profile extends CI_Controller {
 
     public function __construct()
     {
         parent::__construct();
-        $this->load->model("Profile_model");
+        $this->load->model("Edit_profile_model");
 				if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
         {
             //
@@ -19,21 +19,13 @@ class Profile extends CI_Controller {
 
 		function index()
 	    {
-          $profileid=$this->uri->segment(3);
-          $data["profile"]=$this->Profile_model->profiledata($profileid);
 	        $data["page"]="profile/profile_page";
 	        $this->load->view("menu/content", $data);
 	    }
 
-  /*    function profileload()
+    function infobox()
     {
 
-      $data["page"]="profile/profile_page";
-      $this->load->view("menu/content", $data);
     }
-  function infobox()
-    {
-
-    }*/
 
 }
