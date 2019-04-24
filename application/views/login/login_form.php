@@ -35,7 +35,7 @@
                 <label for="">Username</label> <br>
                 <input type="text" name="username" value=""> <br> <br>
                 <label for="">Password</label> <br>
-                <input type="password" name="password" value=""> <br> <br>
+                <input type="password" name="password" value="" required> <br> <br>
                 <input type="submit" name="" value="Login" class="">
             </form>
     </div>
