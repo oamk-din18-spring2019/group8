@@ -41,6 +41,9 @@
       <div class="">
 
         <p>lorem ipsum lorem ipsum</p>
+        <?php
+          echo "Welcome ".$_SESSION["profileid"];
+        ?>
       </div>
 
     </div>

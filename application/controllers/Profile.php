@@ -6,7 +6,7 @@ class Profile extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-		if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
+		    if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
         {
             $this->load->model("Profile_model");
         }
@@ -17,12 +17,12 @@ class Profile extends CI_Controller {
     }
 
 		function index()
-	    {
-          $profileid=$this->uri->segment(3);
-          $data["profile"]=$this->Profile_model->profiledata($profileid);
-	        $data["page"]="profile/profile_page";
-	        $this->load->view("menu/content", $data);
-	    }
+    {
+      $profileid=$this->uri->segment(3);
+      $data["profile"]=$this->Profile_model->profiledata($profileid);
+      $data["page"]="profile/profile_page";
+      $this->load->view("menu/content", $data);
+    }
 
   /*    function profileload()
     {
