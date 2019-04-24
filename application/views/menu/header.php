@@ -7,6 +7,8 @@
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/profile.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/minigame.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/rankings.css">
+    <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/faq.css">
+    <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/battle.js"></script>
     <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/sample.js"></script>
@@ -19,11 +21,12 @@
     <div class="header">
         <div id="logo_info">
           <h1 id="logo_gamevs">GameVS</h1>
+          <a id="header_logoutbutton" href="<?php echo site_url("login/logout"); ?>">
+              <i class="fas fa-sign-out-alt"></i>
+          </a>
+          <div id="header_logout">
 
-        </div>
-        <div id="header_logout">
-          <a href="<?php echo site_url("login/logout"); ?>"> <i class="fas fa-sign-out-alt"></i></a>
-
+          </div>
         </div>
         <div id="menu">
               <ul>

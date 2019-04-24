@@ -29,37 +29,30 @@ body
 }
 #logo_info
 {
-    display: flex;
-    justify-content: center;
+    display: block;
     width: 100%;
-    margin: auto;
+
 }
 
 #logo_gamevs
 {
-    text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 10px, #FFF 0px 0px 25px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 10px, #FFF 0px 0px 25px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
-#header_logout
-{
-  float: right;
-  padding-right: 10px;
-  padding-bottom: 4px;
-}
+
 #header_logoutbutton
 {
-  float: right;
-  background-color: #070711;
-  border: none;
-  border-radius: 20px;
-  box-shadow:  #FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 30px;
   color: white;
-  text-shadow:#FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 30px;
-  padding: 3px 45px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  font-size: 15px;
-  cursor: pointer;
+  float: right;
+  font-size: 25px;
+  margin-right: 10px;
+
+}
+#header_logoutbutton :hover
+{
+  color: red;
+  transition: 0.2s;
 }
 #menu
 {
@@ -92,17 +85,20 @@ body
 }
 
 #menu li a {
+    transition: 0.2s;
     display: flex;
-    justify-content: centeR;
+    justify-content: center;
     color: white;
     font-size: 15px;
     text-align: center;
     padding: 14px;
     text-decoration: none;
     width: 100%;
+    transition: 0,2s;
 }
 
 #menu li a:hover {
+    transition: 0.5s;
     background-color: #070711;
     width: 100%;
     border-left: 1px white solid;
