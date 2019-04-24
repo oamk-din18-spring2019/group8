@@ -14,7 +14,7 @@ body
     left: 0;
     right: 0;
     margin: auto;
-    background: linear-gradient(90deg, #050505, #050505, #e400d7, #050505, #050505);
+    background: linear-gradient(90deg, #050505, #050505, #570252, #050505, #050505);
     background-size: 1800% 1800%;
 
     -webkit-animation: gradient_background 5s ease infinite;
@@ -39,7 +39,28 @@ body
 {
     text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 10px, #FFF 0px 0px 25px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
-
+#header_logout
+{
+  float: right;
+  padding-right: 10px;
+  padding-bottom: 4px;
+}
+#header_logoutbutton
+{
+  float: right;
+  background-color: #070711;
+  border: none;
+  border-radius: 20px;
+  box-shadow:  #FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 30px;
+  color: white;
+  text-shadow:#FFF 0px 0px 2px, #FFF 0px 0px 2px, #FFF 0px 0px 15px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 5px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 30px;
+  padding: 3px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 15px;
+  cursor: pointer;
+}
 #menu
 {
     display: flex;

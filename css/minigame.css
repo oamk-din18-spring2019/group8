@@ -34,7 +34,7 @@
   justify-content: center;
   width: 20%;
 }
-#bminigame_ratings p
+#minigame_ratings p
 {
   font-size: 25px;
   margin: 10px 0px 10px;
@@ -49,25 +49,38 @@
 {
   width: 40%;
 }
+#minigame_form
+{
+  padding-top: 70px;
+}
 .minigame_radiobutton
 {
   -webkit-appearance: none;
-  	background-color: white;
-  	border: 1px solid purple;
-  	padding: 9px;
-  	border-radius: 4px;
-  	display: inline-block;
-  	position: relative;
+  background-color: white;
+  border: 1px solid #050505;
+  padding: 60px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
 }
 .minigame_radiobutton:active, .minigame_radiobutton:checked:active {
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+  outline: none;
+  border: 1px solid #050505;
 }
 
 .minigame_radiobutton:checked {
-	background-color: green;
-	border: 1px solid purple;
+  background: linear-gradient(0deg, #050505, green, #050505, green);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: gradient_background 15s ease infinite;
+  -moz-animation: gradient_background 15s ease infinite;
+  animation: gradient_background 15s ease infinite;
+
+	border: 1px solid green;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
 	color: #99a1a7;
+  outline: none;
 }
 
 #minigame_skipbutton

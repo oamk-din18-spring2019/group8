@@ -6,10 +6,10 @@ class Battle extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-				$this->load->model('Battle_model');
+
 				if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
         {
-
+					$this->load->model('Battle_model');
         }
         else
         {
