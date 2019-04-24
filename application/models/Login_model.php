@@ -16,4 +16,12 @@ class Login_model extends CI_model
         $this->db->where("username", $given_username);
         return $this->db->get()->row("password");
     }
+
+    public function get_id($given_username)
+    {
+        $this->db->select("id");
+        $this->db->from("users");
+        $this->db->where("username", $given_username);
+        return $this->db->get()->row("id");
+    }
 }
