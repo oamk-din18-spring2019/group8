@@ -92,8 +92,6 @@
       <input type="number" id="submit_elo_js_2" name="elo2" value="" readonly="readonly">
       <input type="number" id="submit_genreelo_js_2" name="genreelo2" value="" readonly="readonly">
   </form>
-
-
   <button type="submit" form="submiteloid" name="button" style="display: none !important" class="battle_button" id="battle_skipbutton">NEXT GAMES</button>
 </div>
 <button class="battle_button" onclick="window.location.reload()" id="battle_nextgamesbutton">NEXT/SKIP</button>

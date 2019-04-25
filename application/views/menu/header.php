@@ -14,6 +14,7 @@
     <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/sample.js"></script>
     <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/minigame.js"></script>
     <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/global.js"></script>
+    <script type = 'text/javascript' src = "<?php echo base_url(); ?>js/about.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>GameVS</title>
   </head>
@@ -41,5 +42,3 @@
         </div>
     </div>
     <div class="container">
-
-

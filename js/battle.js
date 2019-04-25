@@ -124,13 +124,6 @@ function battle_selections()
       document.getElementById("battle_skipbutton").style.display = "flex";
       document.getElementById("battle_submitbutton").style.display = "none";
       document.getElementById("battle_nextgamesbutton").style.display = "none";
-      console.log("winner is "+ winner);
-      console.log(game1_newelo);
-      console.log(game2_newelo);
-      console.log(game1_newelogenre);
-      console.log(game2_newelogenre);
-      console.log(game1_add);
-      console.log(game2_add);
       game1_id.value = game1_winner;
       game2_id.value = game2_winner;
       game1_game.value = game1_name;
