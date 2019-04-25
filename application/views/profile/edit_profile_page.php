@@ -1,17 +1,17 @@
 
 
 <div id="profile_container">
-  <h1 id="profile_title">PROFILE</h1>
+  <h1 id="profile_title"><?php echo $_SESSION["username"]?></h1>
 
   <div id="profile_container_divider">
     <div class="profile_container_info">
       <div id="profile_profilepic">
-        <img src="..\image\placeholder123.png" alt="placeholder">
+        <img src="..\image\profilepictures\profilepicture<?php echo $_SESSION["profileid"]?>.png">
       </div>
       <div id="profile_picture">
-        <form class="" action="index.html" method="post">
+        <form class="" action="<?=base_url('index.php/edit_profile/profilepic')?>" method="post" enctype="multipart/form-data">
             <p>Add or Edit your profile picture</p>
-            <input id="profile_addpicture" type="file" name="profile_photo" placeholder="Photo"
+            <input id="profile_addpicture" type="file" name="profile_picture" id="profile_picture" placeholder="Picture"
              accept=".png" required="" capture>
             <input type="submit" value="Upload">
             <p>You can only add .PNG files</p>
@@ -26,15 +26,12 @@
            How old you are? etc..."
            form="usrform">
           </textarea> <br>
-          <input type="submit" value="Upload">
+          <input type="submit" value="Upload" onlick="<?php session_reset()?>">
         </form>
       </div>
     </div>
     <div class="profile_container_info">
       <div class="">
-
-        <p>lorem ipsum lorem ipsum</p>
-      </div>
 
     </div>
   </div>

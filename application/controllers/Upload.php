@@ -41,5 +41,4 @@ class Upload extends CI_Controller {
             $this->load->view('upload_result', $data);
         }
     }
-
 }

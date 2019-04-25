@@ -24,19 +24,27 @@ class Search extends CI_Controller {
         $this->load->view("menu/content", $data);
     }
 
-    function search()
+    function games()
     {
         $keyword=$this->input->post('keyword');         
-        $data['results']=$this->Search_model->search($keyword);
-		$data["page"]="search/search_results";
+        $data['results']=$this->Search_model->searchgames($keyword);
+		$data["page"]="search/game_results";
         $this->load->view("menu/content", $data);
     }
 
-    function searchbygenre()
+    function users()
+    {
+        $profile=$this->input->post('profile');         
+        $data['profiles']=$this->Search_model->searchprofiles($profile);
+		$data["page"]="search/profile_results";
+        $this->load->view("menu/content", $data);
+    }
+
+    /*function searchbygenre()
     {
         $genre=$this->input->post('genre');
         $data['results']=$this->Search_model->searchbygenre($genre);   
         $data["page"]="search/search_results";
         $this->load->view("menu/content", $data);
-    }
+    }*/
 }

@@ -1,7 +1,5 @@
-
-
 <div id="profile_container">
-  <h1 id="profile_title">PROFILE</h1>
+  <h1 id="profile_title"><?php foreach ($profile as $row) {echo $row['username'];} ?></h1>
 
   <div id="profile_container_divider">
     <div class="profile_container_info">
@@ -13,16 +11,7 @@
                 echo "<p>".$row["ranking"]."</p>";
         } ?>
         <?php foreach ($profile as $row) {?>
-        <img src="..\image\gamepictures\gamepicture<?php echo $row['id'];}?>.png" alt="placeholder">
-      </div>
-      <div id="profile_picture">
-        <form class="" action="index.html" method="post">
-            <p>Add or Edit your profile picture</p>
-            <input id="profile_addpicture" type="file" name="profile_photo" placeholder="Photo"
-             accept=".png" required="" capture>
-            <input type="submit" value="Upload">
-            <p>You can only add .PNG files</p>
-        </form>
+        <img src="..\..\..\image\profilepictures\profilepicture<?php echo $row['id'];}?>.png">
       </div>
     </div>
     <div class="profile_container_info">
@@ -46,6 +35,15 @@
         ?>
       </div>
 
+      <?php
+        if($_SESSION["profileid"] == $profileid) 
+        {
+          ?>
+          <form action="<?php echo site_url("edit_profile")?>" method="post">
+          <input type="submit" name="someAction" value="Edit your profile" />
+          </form>
+      <?php
+        }?>
     </div>
   </div>
 </div>
