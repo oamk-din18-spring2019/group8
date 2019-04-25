@@ -20,6 +20,12 @@
   justify-content: center;
   width: 100%;
 }
+.battle_gametitle
+{
+  font-size: 20px;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 2px #FF2D95, 3px 3px 5px white, 4px 4px 10px #FF2D95;
+}
 #battle_game1
 {
   width: 40%;

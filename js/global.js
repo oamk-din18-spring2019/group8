@@ -34,6 +34,10 @@ function change_background()
 {
 
     if(document.URL.indexOf("profile") >= 0){
+      document.body.style.backgroundImage = "url('../image/profile_background.png')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
 
       }
 
@@ -42,13 +46,17 @@ function change_background()
       }
 
     if(document.URL.indexOf("battle") >= 0){
-      document.body.style.backgroundImage = "url('../image/testiman.png')";
+      document.body.style.backgroundImage = "url('../image/battle_background.png')";
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundPosition = "center center";
       document.body.style.backgroundSize = "cover";
       }
 
     if(document.URL.indexOf("rankings") >= 0){
+      document.body.style.backgroundImage = "url('../image/rankings_background.png')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
 
       }
     if(document.URL.indexOf("minigame") >= 0){

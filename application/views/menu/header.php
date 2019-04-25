@@ -32,8 +32,8 @@
               <ul>
                 <li id="profile_link" onclick="change_class();"><a href="<?php echo site_url('profile'); ?>">Profile</a> </li>
                 <li id="search_link"><a href="<?php echo site_url('search'); ?>">Search</a> </li>
-                <li id="battle_link"><a href="<?php echo site_url('battle'); ?>">Battle</a> </li>
                 <li id="rankings_link"><a href="<?php echo site_url('rankings'); ?>">Rankings</a> </li>
+                <li id="battle_link"><a href="<?php echo site_url('battle'); ?>">Battle</a> </li>
                 <li id="minigame_link"><a href="<?php echo site_url('minigame'); ?>">Minigame</a> </li>
                 <li id="faq_link"><a href="<?php echo site_url('faq'); ?>">FAQ & Info</a> </li>
                 <li id="about_link"><a href="<?php echo site_url('about'); ?>">About</a> </li>

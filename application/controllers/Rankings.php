@@ -21,6 +21,7 @@ class Rankings extends CI_Controller {
 	function index()
     {
         $data['results']=$this->Rankings_model->rankings_list();
+				$data['results2']=$this->Rankings_model->rankings_list2();
         $data["page"]="rankings/rankings_page";
         $this->load->view("menu/content", $data);
     }
