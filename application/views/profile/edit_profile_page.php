@@ -20,13 +20,14 @@
     </div>
     <div class="profile_container_info">
       <div id="profile_infobox">
-        <form class="" action="<?php echo site_url("profile")?>" method="post">
-          <textarea id="profile_infobox_edit" wrap="hard" maxlength="700" rows="20" cols="50" name="comment"
+        <form class="" action="<?php echo site_url("edit_profile/infobox")?>" method="post">
+          <textarea name="profile_infobox_edit" wrap="hard" maxlength="700" rows="20" cols="50"
            placeholder="Here you should write general information like: What kind of genres you like?
-           How old you are? etc..."
-           form="usrform">
+           How old you are? etc..."> <?php foreach ($result as $row){
+                    echo $row["infobox"];
+            } ?>
           </textarea> <br>
-          <input type="submit" value="Upload" onlick="<?php session_reset()?>">
+          <input type="submit" value="Upload">
         </form>
       </div>
     </div>

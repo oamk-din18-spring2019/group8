@@ -9,12 +9,18 @@ class Edit_profile_model extends CI_model
         parent:: __construct();
     }
 
-    public function infobox($insert_data)
+    public function edit_infobox($update_data, $id)
     {
-      $this->db->insert("games", $insert_data);
-      return $this->db->affected_rows();
-
-      $_SESSION["username"]=$given_username;
+      $this->db->set("infobox", $update_data);
+      $this->db->where("id", $id);
+      $this->db->update("users");
     }
 
+    public function getinfobox($id)
+    {
+      $this->db->select("*");
+      $this->db->from("users");
+      $this->db->where("id", $id);
+      return $this->db->get()->result_array();
+    }
 }

@@ -17,7 +17,9 @@ class Edit_profile extends CI_Controller {
     }
 
     public function index()
-    {
+    {   
+        $id = $_SESSION["profileid"];
+        $data["result"]=$this->Edit_profile_model->getinfobox($id);
         $data["page"]="profile/edit_profile_page";
         $this->load->view("menu/content", $data);
     }
@@ -43,14 +45,25 @@ class Edit_profile extends CI_Controller {
 
         else 
         {
-            $data["page"]="profile/edit_profile_page";
-            $this->load->view("menu/content", $data);
+            redirect("edit_profile");
         }
     }
 
     function infobox()
     {
+        $update_data=$this->input->post("profile_infobox_edit");
+        $id = $_SESSION["profileid"];
 
+        $result=$this->Edit_profile_model->edit_infobox($update_data, $id);
+
+        if ($result==1) 
+        {
+            redirect("edit_profile");
+        }
+
+        else
+        {
+            redirect("edit_profile");
+        }
     }
-
 }

@@ -5,33 +5,24 @@
     <div class="profile_container_info">
       <div id="profile_profilepic">
         <?php foreach ($profile as $row){
-                echo "<p>".$row["id"]."</p>";
-                echo "<p>".$row["username"]."</p>";
-                echo "<p>".$row["userpoints"]."</p>";
-                echo "<p>".$row["ranking"]."</p>";
+          echo "<p>Rank = ".$row["ranking"]."</p>";
+          echo "<p>Points = ".$row["userpoints"]."</p>";
         } ?>
         <?php foreach ($profile as $row) {?>
-        <img src="..\..\..\image\profilepictures\profilepicture<?php echo $row['id'];}?>.png">
+        <img src="..\..\..\image\profilepictures\profilepicture<?php echo $row['id'];}?>.png" alt="No picture... (yet?)">
       </div>
     </div>
     <div class="profile_container_info">
       <div id="profile_infobox">
-        <form class="" action="<?php echo site_url("profile")?>" method="post">
-          <textarea id="profile_infobox_edit" wrap="hard" maxlength="700" rows="20" cols="50" name="comment"
-           placeholder="Here you should write general information like: What kind of genres you like?
-           How old you are? etc..."
-           form="usrform">
-          </textarea> <br>
-          <input type="submit" value="Upload">
-        </form>
+        <?php foreach ($profile as $row){
+                  echo "<p>".$row["infobox"]."</p>";
+          } ?>
       </div>
     </div>
     <div class="profile_container_info">
       <div class="">
-
-        <p>lorem ipsum lorem ipsum</p>
         <?php
-          echo "Welcome ".$_SESSION["profileid"];
+          echo "Welcome ".$_SESSION["username"]."!"; 
         ?>
       </div>
 
