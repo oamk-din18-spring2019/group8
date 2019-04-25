@@ -17,17 +17,26 @@ class Search_model extends CI_model
         return $this->db->get()->result_array();
     }
 
-    function search($keyword)
+    function searchgames($keyword)
     {
-        $this->db->like('game',$keyword);
+        $this->db->order_by("game", "asc");
+        $this->db->like('game', $keyword);
         $query=$this->db->get('games');
         return $query->result();
     }
 
-    function searchbygenre($genre)
+    function searchprofiles($profile)
+    {
+        $this->db->order_by("username", "asc");
+        $this->db->like('username', $profile);
+        $query=$this->db->get('users');
+        return $query->result();
+    }
+
+    /*function searchbygenre($genre)
     {
         $this->db->like('genre',$genre);
         $query=$this->db->get('games');
         return $query->result();
-    }
+    }*/
 }

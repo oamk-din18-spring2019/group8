@@ -27,7 +27,7 @@
         </div>
         <div id="menu">
               <ul>
-                <li id="profile_link" onclick="change_class();"><a href="<?php echo site_url('profile'); ?>">Profile</a> </li>
+                <li id="profile_link"><a href="<?php echo base_url() ?>index.php/profile/id/<?php echo $_SESSION["profileid"] ?>">Profile</a> </li>
                 <li id="search_link"><a href="<?php echo site_url('search'); ?>">Search</a> </li>
                 <li id="battle_link"><a href="<?php echo site_url('battle'); ?>">Battle</a> </li>
                 <li id="rankings_link"><a href="<?php echo site_url('rankings'); ?>">Rankings</a> </li>
@@ -38,3 +38,5 @@
         </div>
     </div>
     <div class="container">
+
+

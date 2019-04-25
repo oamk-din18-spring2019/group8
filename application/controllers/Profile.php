@@ -18,19 +18,19 @@ class Profile extends CI_Controller {
 
 		function index()
     {
+      $data["page"]="profile/profile_page";
+      $this->load->view("menu/content", $data);
+    }
+
+    function id()
+    {
       $profileid=$this->uri->segment(3);
       $data["profile"]=$this->Profile_model->profiledata($profileid);
+      $data["profileid"]=$profileid;
       $data["page"]="profile/profile_page";
       $this->load->view("menu/content", $data);
     }
-
-  /*    function profileload()
-    {
-
-      $data["page"]="profile/profile_page";
-      $this->load->view("menu/content", $data);
-    }
-  function infobox()
+    /*    function infobox()
     {
 
     }*/
