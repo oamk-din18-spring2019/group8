@@ -60,7 +60,7 @@ function change_background()
 
       }
     if(document.URL.indexOf("minigame") >= 0){
-
+      
       }
 
     if(document.URL.indexOf("faq") >= 0){

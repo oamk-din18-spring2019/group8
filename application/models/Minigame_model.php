@@ -10,11 +10,21 @@ class Minigame_model extends CI_model
     }
 
 
-public function randomgames()
-{
-  $this->db->order_by('rand()');
-  $this->db->limit(1);
-  $query = $this->db->get('games');
-  return $query->result_array();
-}
+  public function randomgames()
+  {
+    $this->db->order_by('rand()');
+    $this->db->limit(1);
+    $query = $this->db->get('games');
+    return $query->result_array();
+  }
+  public function getuser()
+  {
+    $query = $this->db->get('users',$_SESSION["profileid"]);
+    return $query->result_array();
+  }
+  public function submit_userelo($insert_data)
+  {
+      $this->db->replace("users", $insert_data);
+      return $this->db->affected_rows();
+  }
 }
