@@ -21,7 +21,7 @@
 }
 .rankings_listtitle
 {
-  display: flex;
+  display: block;
 }
 #rankings_content
 {
@@ -32,6 +32,11 @@
   display: flex;
   justify-content: center;
   width: 50%;
+}
+.rankings_listnumbers
+{
+  margin-right: 2px;
+  margin-left: 2px;
 }
 #battle_ratings
 {

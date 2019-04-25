@@ -8,7 +8,7 @@
     <div>
       <?php
       foreach ($game1 as $row) {
-          echo '<p>'.$row['game'].'</p>';
+          echo '<p class="battle_gametitle">'.$row['game'].'</p>';
           echo '<p style="display:none;" id="game1_id">'.$row['id'].'</p>';
           echo '<p style="display:none;" id="game1_elo">'.$row['elo'].'</p>';
           echo '<p style="display:none;" id="game1_name">'.$row['game'].'</p>';
@@ -60,7 +60,7 @@
     <div class="">
       <?php
       foreach ($game2 as $row) {
-          echo '<p>'.$row['game'].'</p>';
+          echo '<p class="battle_gametitle">'.$row['game'].'</p>';
           echo '<p style="display:none;" id="game2_id">'.$row['id'].'</p>';
           echo '<p style="display:none;" id="game2_elo">'.$row['elo'].'</p>';
           echo '<p style="display:none;" id="game2_name">'.$row['game'].'</p>';
