@@ -82,22 +82,20 @@
         <div id="top5_list">
             <ol>
                 Top 5
-                <li>csgo</li>
-                <li>terraria</li>
-                <li>cod</li>
-                <li>minecraft</li>
-                <li>apex</li>
+                <?php
+                foreach ($results as $row) {?>
+                        <li><?php echo $row->game ?></li>
+                <?php  }?>
             </ol>
         </div>
 
         <div id="bottom5_list">
             <ol>
                 Bottom 5
-                <li>lol</li>
-                <li>titanfall</li>
-                <li>gta v</li>
-                <li>fallout 76</li>
-                <li>fortnite</li>
+                <?php
+                foreach ($results2 as $row) {?>
+                        <li><?php echo $row->game ?></li>
+                <?php  }?>
             </ol>
         </div>
 
