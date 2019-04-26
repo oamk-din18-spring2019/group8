@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/style.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/battle.css">
+    <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/search.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/profile.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/minigame.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/rankings.css">
+    <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/games.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/faq.css">
     <link rel = "stylesheet" href = "<?php echo base_url(); ?>css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">

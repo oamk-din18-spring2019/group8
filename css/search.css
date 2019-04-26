@@ -1,0 +1,67 @@
+.search_container
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.search_container h1
+{
+    margin-top: 20px;
+    font-size: 70px;
+    text-shadow: #FFF 0px 0px 1px, #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 45px;
+}
+.search_box
+{
+    display: flex;
+    justify-content: center;
+    width: 100%,
+}
+.search_games
+{
+    width: 40%;
+    margin-right: 5px;
+}
+.search_profiles
+{
+    width: 40%;
+    margin-left: 5px;
+}
+.search_gamesinput
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+}
+.search_profilesinput
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+}
+.search_submitgames
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+}
+.search_submitprofiles
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+}
+.search_resultbox
+{
+width: 100%;
+}
+.search_results
+{
+    font-size: 20px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 2px #FF2D95, 3px 3px 5px white;
+}
