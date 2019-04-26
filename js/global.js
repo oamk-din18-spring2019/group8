@@ -60,7 +60,10 @@ function change_background()
 
       }
     if(document.URL.indexOf("minigame") >= 0){
-      
+      document.body.style.backgroundImage = "url('../image/minigame_background.png')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
       }
 
     if(document.URL.indexOf("faq") >= 0){

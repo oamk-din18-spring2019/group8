@@ -19,11 +19,13 @@ class Minigame_model extends CI_model
   }
   public function getuser()
   {
+    $this->db->where('id',$_SESSION["profileid"]);
     $query = $this->db->get('users',$_SESSION["profileid"]);
     return $query->result_array();
   }
   public function submit_userelo($insert_data)
   {
+
       $this->db->replace("users", $insert_data);
       return $this->db->affected_rows();
   }

@@ -4,28 +4,22 @@
   <div id="profile_container_divider">
     <div class="profile_container_info">
       <div id="profile_profilepic">
-        <?php foreach ($profile as $row){
-          echo "<p>Rank = ".$row["ranking"]."</p>";
-          echo "<p>Points = ".$row["userpoints"]."</p>";
-        } ?>
         <?php foreach ($profile as $row) {?>
         <img src="..\..\..\image\profilepictures\profilepicture<?php echo $row['id'];}?>.png" alt="No picture... (yet?)">
+        <?php foreach ($profile as $row){
+          echo "<p>Rank: ".$row["ranking"]."</p>";
+          echo "<p>Points: ".$row["userpoints"]."</p>";
+        } ?>
       </div>
     </div>
     <div class="profile_container_info">
       <div id="profile_infobox">
         <?php foreach ($profile as $row){
-                  echo "<p>".$row["infobox"]."</p>";
+                  echo strip_tags("<p>".$row["infobox"]."</p>");
           } ?>
       </div>
     </div>
     <div class="profile_container_info">
-      <div class="">
-        <?php
-          echo "Welcome ".$_SESSION["username"]."!"; 
-        ?>
-      </div>
-
       <?php
         if($_SESSION["profileid"] == $profileid) 
         {

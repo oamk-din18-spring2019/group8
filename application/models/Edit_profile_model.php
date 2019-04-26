@@ -11,9 +11,11 @@ class Edit_profile_model extends CI_model
 
     public function edit_infobox($update_data, $id)
     {
+      
       $this->db->set("infobox", $update_data);
       $this->db->where("id", $id);
       $this->db->update("users");
+  
     }
 
     public function getinfobox($id)
