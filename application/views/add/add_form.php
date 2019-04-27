@@ -8,6 +8,11 @@
         <option value="RPG">RPG</option>
         <option value="MOBA">MOBA</option>
         <option value="MMORPG">MMORPG</option>
+        <option value="FIGHTING">FIGHTING</option>
+        <option value="MOBILE">MOBILE</option>
+        <option value="STORY">STORY</option>
+        <option value="PLATFORM">PLATFORM</option>
+        <option value="OTHER">OTHER</option>
     </select>
         <input type="submit" name="" value="Submit">
 </form>

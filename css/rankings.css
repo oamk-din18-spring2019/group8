@@ -27,7 +27,7 @@
   text-shadow: 2px 2px 2px #FF2D95, 3px 3px 5px white, 4px 4px 10px #FF2D95;
   text-decoration: underline;
 }
-#rankings_content
+.rankings_content
 {
   display:flex;
 }
