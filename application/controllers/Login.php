@@ -31,6 +31,7 @@ class Login extends CI_Controller {
         $given_username = $this->input->post("username");
         $given_password = $this->input->post("password");
         $id = $this->Login_model->get_id($given_username);
+        $groupid = $this->Login_model->get_groupid($given_username);
         $db_password=$this->Login_model->get_password($given_username);
         $_SESSION['login_error'] = array("Your username or password was incorrect.");
 
@@ -40,6 +41,7 @@ class Login extends CI_Controller {
             $_SESSION["logged_in"]=true;
             $_SESSION["username"]=$given_username;
             $_SESSION["profileid"]=$id;
+            $_SESSION["groupid"]=$groupid;
             redirect("battle");
         }
         else

@@ -29,7 +29,7 @@ class Edit_profile extends CI_Controller {
         $new_name = "profilepicture".$_SESSION["profileid"];
         $config['file_name'] = $new_name;
         $config['overwrite'] = TRUE;
-        $config['upload_path'] = './image/profilepictures/';
+        $config['upload_path'] = '.../image/profilepictures/';
         $config['allowed_types'] = 'gif|jpg|png';
         $config['max_size'] = 2000;
         $config['max_width'] = 1500;
@@ -39,8 +39,7 @@ class Edit_profile extends CI_Controller {
 
         if (!$this->upload->do_upload('profile_picture')) 
         {
-            $data["error"] = array('error' => $this->upload->display_errors());
-            $this->load->view("menu/content", $error);
+            redirect("edit_profile");
         } 
 
         else 

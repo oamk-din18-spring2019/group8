@@ -7,8 +7,15 @@ class Upload extends CI_Controller {
     public function __construct() 
     {
         parent::__construct();
-        $this->load->helper('url', 'form');
-        $this->load->model("Upload_model");
+		if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true && $_SESSION["groupid"] == 1 )
+        {
+            $this->load->helper('url', 'form');
+            $this->load->model("Upload_model");
+        }
+        else
+        {
+            redirect("");
+        }  
     }
 
     public function index() 
