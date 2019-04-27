@@ -1,7 +1,5 @@
 <div id="about_container">
-  <div >
-    <h1 id="about_title">About us</h1>
-  </div>
+
 
   <div id="about_infocontainer">
     <div id="about_joelbox">

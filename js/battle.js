@@ -156,3 +156,103 @@ function submitforms()
   document.getElementById("submiteloid2").submit();
 
 }
+
+document.onkeydown = function(event) {
+  if (document.getElementById("battle_value1").checked == false && document.getElementById("battle_value2").checked == false)
+  {
+  switch (event.keyCode) 
+    {
+     case 37:
+          document.getElementById("battle_value1").checked = true;
+        break;
+     case 39:
+          document.getElementById("battle_value2").checked = true;
+        break;
+    }    
+  }
+   else if (document.getElementById("battle_value3").checked == false && document.getElementById("battle_value4").checked == false)
+    {
+    switch (event.keyCode) 
+      {
+       case 37:
+            document.getElementById("battle_value3").checked = true;
+          break;
+       case 39:
+            document.getElementById("battle_value4").checked = true;
+          break;
+      }
+    }
+    else if (document.getElementById("battle_value5").checked == false && document.getElementById("battle_value6").checked == false)
+    {
+    switch (event.keyCode) 
+      {
+       case 37:
+            document.getElementById("battle_value5").checked = true;
+          break;
+       case 39:
+            document.getElementById("battle_value6").checked = true;
+          break;
+      }
+    }
+    else if (document.getElementById("battle_value7").checked == false && document.getElementById("battle_value8").checked == false)
+    {
+    switch (event.keyCode) 
+      {
+       case 37:
+            document.getElementById("battle_value7").checked = true;
+          break;
+       case 39:
+            document.getElementById("battle_value8").checked = true;
+          break;
+      }
+    }
+    else if (document.getElementById("battle_value9").checked == false && document.getElementById("battle_value10").checked == false)
+    {
+    switch (event.keyCode) 
+      {
+       case 37:
+            document.getElementById("battle_value9").checked = true;
+          break;
+       case 39:
+            document.getElementById("battle_value10").checked = true;
+          break;
+      }
+    }
+    else if ((document.getElementById("battle_value1").checked == true || document.getElementById("battle_value2").checked == true)&&
+    (document.getElementById("battle_value1").checked == true || document.getElementById("battle_value2").checked == true)&&
+    (document.getElementById("battle_value1").checked == true || document.getElementById("battle_value2").checked == true)&&
+    (document.getElementById("battle_value1").checked == true || document.getElementById("battle_value2").checked == true)&&
+    (document.getElementById("battle_value1").checked == true || document.getElementById("battle_value2").checked == true))
+    {
+      switch (event.keyCode) 
+        {
+         case 38:
+         document.getElementById("battle_value1").checked = false;
+         document.getElementById("battle_value2").checked = false;
+         document.getElementById("battle_value3").checked = false;
+         document.getElementById("battle_value4").checked = false;
+         document.getElementById("battle_value5").checked = false;
+         document.getElementById("battle_value6").checked = false;
+         document.getElementById("battle_value7").checked = false;
+         document.getElementById("battle_value8").checked = false;
+         document.getElementById("battle_value9").checked = false;
+         document.getElementById("battle_value10").checked = false;
+         break;
+         case 13:
+         battle_selections();
+        }
+      }
+    if (document.getElementById("battle_skipbutton").style.display != "none")
+    {
+      switch (event.keyCode) 
+      {
+      case 13:
+      document.getElementById("battle_skipbutton").click();
+      }
+    }
+    
+
+    
+    
+};
+
