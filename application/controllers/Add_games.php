@@ -6,7 +6,7 @@ class Add_games extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-		if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true)
+		if(!empty($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true && $_SESSION["groupid"] == 1 )
         {
             $this->load->model("Add_model");
         }

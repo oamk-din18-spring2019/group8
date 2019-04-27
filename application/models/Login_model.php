@@ -24,4 +24,12 @@ class Login_model extends CI_model
         $this->db->where("username", $given_username);
         return $this->db->get()->row("id");
     }
+
+    public function get_groupid($given_username)
+    {
+        $this->db->select("groupid");
+        $this->db->from("users");
+        $this->db->where("username", $given_username);
+        return $this->db->get()->row("groupid");
+    }
 }
