@@ -54,7 +54,7 @@ class Login extends CI_Controller {
     public function register()
     {
         $this->load->model("Login_model");
-        $_SESSION['register_error'] = array("Given username is already taken.");
+        $_SESSION['register_error'] = array("Given username is already taken or it includes characters that are not allowed (Use a-z, 0-9).");
         $connection = mysqli_connect('mysli.oamk.fi', 't7aljo00', 'bPkMkXPAfN5MFcsQ');
         if (!$connection)
         {
@@ -73,13 +73,13 @@ class Login extends CI_Controller {
         $sql_usernames = "SELECT * FROM users WHERE username='$username'";
         $res_usernames = mysqli_query($connection, $sql_usernames);
 
-        if(mysqli_num_rows($res_usernames) > 0)
+        if(mysqli_num_rows($res_usernames) > 0 && !ctype_alnum($username))
         {
             $_SESSION["logged_in"]=false;
             redirect("");
         }
 
-			else if(isset($_POST['username']) && isset($_POST['password']) && !empty($username) && !empty($password))
+			else if(isset($_POST['username']) && isset($_POST['password']) && !empty($username) && !empty($password) && ctype_alnum($username))
 	        {
 	            $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 	            $result = mysqli_query($connection, $query);
@@ -92,8 +92,8 @@ class Login extends CI_Controller {
                     $this->load->model("Profile_model");
                     $data["profileid"]=$profileid;
                     $data["profile"]=$this->Profile_model->profiledata($profileid);
-                    $data["page"]="profile/profile_page";
-                    $this->load->view("menu/content", $data);
+                    $this->load->model("Battle_model");
+                    redirect("battle");
                 }
                 else
                 {

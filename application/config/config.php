@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 http://www.students.oamk.fi/~t7aljo00/testailua/
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://www.students.oamk.fi/~t7aljo00/testailua/';
 
 /*
 |--------------------------------------------------------------------------
