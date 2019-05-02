@@ -20,8 +20,7 @@
 
     <div id="tutorial_video">
         <video controls width="360" height="202,50">
-            <source src="video/ez4ence.mp4" type="video/mp4">
-            <source src="video/demo.webm" type="video/webm">
+            <source src="video/video_projekti.mp4" type="video/mp4">
             <div style="border: 1px solid black ; padding: 8px ;">
                 Sorry, your browser does not support the &lt;video&gt; tag used in this demo.
             </div>
