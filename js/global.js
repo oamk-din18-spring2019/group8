@@ -38,11 +38,31 @@ function change_background()
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundPosition = "center center";
       document.body.style.backgroundSize = "cover";
-
+      }
+    if(document.URL.indexOf("profile/id") >= 0){
+      document.body.style.backgroundImage = "url('../../../image/profile_background.png')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
       }
 
     if(document.URL.indexOf("search") >= 0){
-
+      document.body.style.backgroundImage = "url('../image/search_background.png')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
+      }
+    if(document.URL.indexOf("search/games") >= 0){
+      document.body.style.backgroundImage = "url('../../image/search_background.png')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
+      }
+    if(document.URL.indexOf("search/users") >= 0){
+      document.body.style.backgroundImage = "url('../../image/search_background.png')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
       }
 
     if(document.URL.indexOf("battle") >= 0){
@@ -67,10 +87,17 @@ function change_background()
       }
 
     if(document.URL.indexOf("faq") >= 0){
+      document.body.style.backgroundImage = "url('../image/faq_background.png')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
       }
 
     if(document.URL.indexOf("about") >= 0){
-
+      document.body.style.backgroundImage = "url('../image/about_background.png')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundSize = "cover";
       }
 
 }
