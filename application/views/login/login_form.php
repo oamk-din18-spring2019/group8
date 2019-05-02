@@ -46,13 +46,16 @@
 
         <div id="register_box">
             <form class="register_form" action="<?php echo site_url("login/register"); ?>" method="post">
-                <label for="">Select username</label> <br>
-                <input type="text" name="username" value=""> <br> <br>
-                <label for="">Select password</label> <br>
-                <input type="text" name="password" value=""> <br> <br>
-                <input type="submit" name="" value="Create an account" class="">
+                <label title="We have no way of returning your account back. So select your username and password wisely." for="">Select Username</label> <br>
+                <input title="We have no way of returning your account back. So select your username and password wisely." type="text" name="username" value=""> <br> <br>
+                <label title="We have no way of returning your account back. So select your username and password wisely." for="">Select Password</label> <br>
+                <input title="We have no way of returning your account back. So select your username and password wisely." type="text" name="password" value=""> <br> <br>
+                <input title="We have no way of returning your account back. So select your username and password wisely." type="submit" name="" value="Create an account" class="">
             </form>
         </div>
+        <div id="yes_account">
+            <button id="" onclick="show_login()"> Already have an account? </button>
+            </div>
 
         <div id="login_buttons">
             <input type="button" value="Login" class="login_button" onclick="show_login()">
@@ -78,10 +81,9 @@
     </div>
 
     <div id="lists">
-
         <div id="top5_list">
             <ol>
-                Top 5
+                Top 5 ALL Games
                 <?php
                 foreach ($results as $row) {?>
                         <li><?php echo $row->game ?></li>
@@ -91,7 +93,7 @@
 
         <div id="bottom5_list">
             <ol>
-                Bottom 5
+                Worst 5 ALL Games
                 <?php
                 foreach ($results2 as $row) {?>
                         <li><?php echo $row->game ?></li>
