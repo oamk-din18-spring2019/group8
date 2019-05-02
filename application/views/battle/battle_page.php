@@ -27,27 +27,28 @@
         <table>
           <tr>
             <td><input type="radio" name="value1" id="battle_value1" value="1" class="battle_radiobutton"></td>
-            <td><p>Graphics</p></td>
+            <td><p title="Think about the era when the game was published and at what level the graphics where then.">Graphics</p></td>
             <td><input type="radio" name="value1" id="battle_value2" value="2" class="battle_radiobutton"></td>
           </tr>
           <tr>
             <td><input type="radio" name="value2" id="battle_value3" value="1" class="battle_radiobutton"></td>
-            <td><p>Gameplay</p></td>
+            <td><p title="You should compare how good is the game engine and the mechanics of the game.">Gameplay</p></td>
             <td><input type="radio" name="value2" id="battle_value4" value="2" class="battle_radiobutton"></td>
           </tr>
           <tr>
             <td><input type="radio" name="value3" id="battle_value5" value="1" class="battle_radiobutton"></td>
-            <td><p>Content</p></td>
+            <td><p title="How much is there to do? Does the other game have multiple good game modes or just a really good story?">Content</p></td>
             <td><input type="radio" name="value3" id="battle_value6" value="2" class="battle_radiobutton"></td>
           </tr>
           <tr>
             <td><input type="radio" name="value4" id="battle_value7" value="1" class="battle_radiobutton"></td>
-            <td><p>Community</p></td>
+            <td><p title="How good is the community for the game right now? Does the community help new players or do they make it interesting in otherways?">
+              Community</p></td>
             <td><input type="radio" name="value4" id="battle_value8" value="2" class="battle_radiobutton"></td>
           </tr>
           <tr>
             <td><input type="radio" name="value5" id="battle_value9" value="1" class="battle_radiobutton"></td>
-            <td><p>Value</p></td>
+            <td><p title="Do you get a solid bang for your buck? Are there microtransactions that give players who pay more and advantage?">Value</p></td>
             <td><input type="radio" name="value5" id="battle_value10" value="2" class="battle_radiobutton"></td>
           </tr>
         </table>

@@ -27,7 +27,17 @@ class Rankings extends CI_Controller {
         $data['results5']=$this->Rankings_model->rankings_list_MMORPG();
         $data['results6']=$this->Rankings_model->rankings_list_MMORPG2();
         $data['results7']=$this->Rankings_model->rankings_list_RPG();
-		$data['results8']=$this->Rankings_model->rankings_list_RPG2();
+        $data['results8']=$this->Rankings_model->rankings_list_RPG2();
+        $data['results9']=$this->Rankings_model->rankings_list_FIGHTING();
+        $data['results10']=$this->Rankings_model->rankings_list_FIGHTING2();
+        $data['results11']=$this->Rankings_model->rankings_list_MOBILE();
+        $data['results12']=$this->Rankings_model->rankings_list_MOBILE2();
+        $data['results13']=$this->Rankings_model->rankings_list_PLATFORM();
+        $data['results14']=$this->Rankings_model->rankings_list_PLATFORM2();
+        $data['results15']=$this->Rankings_model->rankings_list_MOBA();
+        $data['results16']=$this->Rankings_model->rankings_list_MOBA2();
+        $data['results17']=$this->Rankings_model->rankings_list_OTHER();
+        $data['results18']=$this->Rankings_model->rankings_list_OTHER2();
         $data["page"]="rankings/rankings_page";
         $this->load->view("menu/content", $data);
     }
