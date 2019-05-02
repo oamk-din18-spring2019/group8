@@ -2,7 +2,7 @@
 {
     display: flex;
     justify-content: center;
-    color: #8B21C5;
+    color: Black;
     text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 1px, #FFF 0px 0px 20px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 75px;
 }
 
@@ -15,7 +15,6 @@
 #tutorial_video video
 {
     box-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 1px, #FFF 0px 0px 20px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 75px;
-    border-radius: 10%;
     outline: none;
 }
 
@@ -91,8 +90,25 @@
     display: none;
     justify-content: center;
 }
+#yes_account
+{
+    display: none;
+    justify-content: center;
+}
 
 #no_account button
+{
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+#yes_account button
 {
     border: none;
     color: white;
@@ -154,22 +170,32 @@ input[type=submit]
 
 #top5_list
 {
+    width: 30%;
     display: flex;
     justify-content: center;
-    background: #292C31;
-    margin-right: 25px;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.4);
+    margin-right: 2px;
     color: #D6D6D6;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 2px #FF2D95, 3px 3px 5px white, 4px 4px 10px #FF2D95;
 }
 
 #bottom5_list
 {
+    width: 30%;
     display: flex;
+    margin-left: 2px;
+    text-align: center;
     justify-content: center;
-    background: #292C31;
-    margin-left: 25px;
+    background: rgba(0, 0, 0, 0.4);
     color: #D6D6D6;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 2px #FF2D95, 3px 3px 5px white, 4px 4px 10px #FF2D95;
 }
 
 html
