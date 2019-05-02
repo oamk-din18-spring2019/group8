@@ -1,0 +1,23 @@
+.games_gametable
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.games_gametable h1
+{
+    font-size: 40px;
+  text-shadow: #FFF 0px 0px 1px, #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 45px;
+}
+.games_gametable p
+{
+    font-size: 20px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 2px #FF2D95, 3px 3px 5px white, 4px 4px 10px #FF2D95;
+}
+.games_gametable a
+{
+    color: #f0f0f0;
+    text-shadow: 2px 2px 2px #FF2D95, 3px 3px 5px white, 4px 4px 10px #FF2D95;
+}
